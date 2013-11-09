@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Schoolbell' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Nothing+You+Could+Do' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+
+    <script src="/js/custom.modernizr.js"></script>
+
+    <style>
+
+       body{
+           background: rgba(221, 221, 221, 0.49);
+       }
+        #header{
+            position: fixed;
+            margin-left: 200px;
+            color: white;
+            font-size: 12px;
+            font-family: 'Open Sans', sans-serif;
+            font-style: italic;
+            width: 100%;
+            z-index: 5;
+        }
+        footer{
+            position:fixed;
+            bottom: 0px;
+            height: 20px;
+            width: 100%;
+            margin-left: 200px;
+            padding-left: 10px;
+            padding-top: 5px;
+            background-color: red;
+            font-family: 'Open Sans', sans-serif;
+            font-style: italic;
+            color: white;
+            font-size: 12px;
+            vertical-align: bottom;
+        }
+        h1 {
+           position: absolute;
+           top:0px;
+           left: 0px;
+           height: 15px;
+           text-align: left;
+           padding-left: 20px;
+           color: darkslategray;
+           font-size: 15px;
+           font-family: 'Open Sans', sans-serif;
+           font-style: italic;
+       }
+       h2{
+           background-color: white;
+           height: 40px;
+           top:10px;
+           padding-left: 200px;
+           padding-top: 10px;
+           font-size:20px;
+           font-family: calibri, sans-serif;
+
+       }
+       #left_section {
+           background-color: rgb(181, 181, 181);
+           position: fixed;
+           width:200px;
+           height: 100%;
+           padding-top: 10px;
+           /*font-family: 'Schoolbell', cursive, sans-serif;*/
+           Color: white;
+           font-size: 20px;
+           z-index: 4;
+       }
+       #nav_bar{
+           position: fixed;
+           height: 60px;
+           margin-top : 35px;
+           margin-left: 160px;
+           padding-top: 5px;
+           padding-bottom: 0px;
+           vertical-align: bottom;
+           background-color: white;
+           font-family: 'Poiret One', cursive, sans-serif;
+           font-size: 20px;
+           width: 100%;
+           z-index: 3;
+       }
+       #nav_bar ul{
+           list-style-type: none;
+       }
+       #nav_bar li{
+           width: 150px;
+           float: left;
+           text-align: center;
+       }
+       #nav_bar a{
+           color: red;
+           text-decoration: none;
+           display: block;
+           padding: 5px;
+       }
+        #log_in{
+            position: absolute;
+            right: 50px;
+            top: 10px;
+            color: darkgrey;
+        }
+
+       body {
+           margin: 0;
+       }
+       #album_list{
+           position: fixed;
+           width:200px;
+           height: 100%;
+           padding-top: 160px;
+           font-family: 'Open Sans', sans-serif;
+           font-style: italic;
+           font-size: 20px;
+           line-height: 40px;
+           z-index: 4;
+       }
+       #album_list ul{
+           list-style-type: none;
+       }
+       #album_list li{
+           display: table-row;
+       }
+       #album_list a{
+           display: table;
+           text-decoration: none;
+           padding: 5px;
+           color: darkslategray;
+       }
+       #background_image {
+           position: fixed;
+           left: 200px;
+           height:100%;
+           width: 100%;
+           z-index: -1;
+       }
+        #background_image_filter {
+            position: fixed;
+            left: 200px;
+            height:100%;
+            width: 100%;
+            background: rgba(221, 221, 221, 0.9);
+            z-index: 0;
+        }
+        #photo_bucket {
+            height: 60%;
+            width: 60%;
+            left: 200px;
+            top: 75px;
+            z-index:1;
+        }
+        #footer{
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+<h1 id="header">an amateur discovering the possibilities of photography</h1>
+<section id="left_section">
+
+</section>
+        <div id="album_list">
+            <ul>
+                <li><a href="#">Album #1</a></li>
+                <li><a href="#">Album #2</a></li>
+                <li><a href="#">Album #3</a></li>
+                <li><a href="#">Album #4</a></li>
+                <li><a href="#">Album #5</a></li>
+                <li><a href="#">Album #6</a></li>
+            </ul>
+       </div>
+
+       <div id="nav_bar">
+           <ul>
+               <li><a href="#">Landscapes</a></li>
+               <li><a href="#">Portraits</a></li>
+               <li><a href="#">City</a></li>
+               <li><a href="#">Other</a></li>
+           </ul>
+       </div>
+        <!--<div id="background_image_filter">-->
+
+        <!--</div>-->
+        <!--<div id="background_image">-->
+            <!--<img  style="" src=Bubble_BG.png>-->
+        <!--</div>-->
+
+<div id="log_in">
+    <li><a href="#">Log In</a></li>
+</div>
+
+<div>
+<ul data-orbit>
+    <li>
+        <img src="img/Tokyo_skyline_2x3_large(canvas).jpg" alt="Photo by: Duncan Orrell-Jones" />
+        <div class="orbit-caption"></div>
+    </li>
+    <li>
+        <img src="Big_Sur_Waves_%231_12x18.jpg" alt="Photo by: Duncan Orrell-Jones" />
+        <div class="orbit-caption"></div>
+    </li>
+    <li>
+        <img src="img/DSC_6213.jpg" alt="Photo by: Duncan Orrell-Jones" />
+        <div class="orbit-caption"></div>
+    </li>
+    <li>
+        <img src="img/DSC_6335.jpg" alt="Photo by: Duncan Orrell-Jones">
+        <div class="orbit-caption"></div>
+    </li>
+    <li>
+        <img src="img/DSC_6375.jpg" alt="Photo by: Duncan Orrell-Jones">
+        <div class="orbit-caption"></div>
+    </li>
+    <li>
+        <img src="img/L1000336.jpg" alt="Photo by: Duncan Orrell-Jones">
+        <div class="orbit-caption"></div>
+    </li>
+    <li>
+        <img src="img/L1000408.jpg" alt="Photo by: Duncan Orrell-Jones">
+        <div class="orbit-caption"></div>
+    </li>
+    <li>
+        <img src="img/L1000413.jpg" alt="Photo by: Duncan Orrell-Jones">
+        <div class="orbit-caption"></div>
+    </li>
+    <li>
+        <img src="img/L1000428.jpg" alt="Photo by: Duncan Orrell-Jones">
+        <div class="orbit-caption"></div>
+    </li>
+    <li>
+        <img src="img/L1000451.jpg" alt="Photo by: Duncan Orrell-Jones">
+        <div class="orbit-caption"></div>
+    </li>
+</ul>
+</div>
+<div class="slideshow-wrapper">
+    <div class="preloader"></div>
+    <ul data-orbit>
+        <!-- Orbit slides -->
+    </ul>
+
+</div>
+
+<!-- SlidesJS Required: Link to jQuery -->
+<!--<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>-->
+<!-- End SlidesJS Required -->
+
+        <footer id="footer">
+        web design by Duncan Orrell-Jones
+       </footer>
+
+<script>
+    document.write('<script src=/js/vendor/'
+            + ('__proto__' in {} ? 'zepto' : 'jquery')
+            + '.js><\/script>');
+</script>
+
+<script src="/js/foundation.min.js"></script>
+
+<!-- Other JS plugins can be included here -->
+
+<script>
+    $(document).foundation();
+
+    $(document).foundation('orbit', {
+        animation: 'fade',
+        timer_speed: 10000,
+        pause_on_hover: true,
+        resume_on_mouseout: false,
+        animation_speed: 500,
+        stack_on_small: true,
+        navigation_arrows: true,
+        slide_number: true,
+        container_class: 'orbit-container',
+        stack_on_small_class: 'orbit-stack-on-small',
+        next_class: 'orbit-next',
+        prev_class: 'orbit-prev',
+        timer_container_class: 'orbit-timer',
+        timer_paused_class: 'paused',
+        timer_progress_class: 'orbit-progress',
+        slides_container_class: 'orbit-slides-container',
+        bullets_container_class: 'orbit-bullets',
+        bullets_active_class: 'active',
+        slide_number_class: 'orbit-slide-number',
+        caption_class: 'orbit-caption',
+        active_slide_class: 'active',
+        orbit_transition_class: 'orbit-transitioning',
+        bullets: true,
+        timer: true,
+        next_on_click: false,
+        variable_height: false,
+        before_slide_change: function(){},
+        after_slide_change: function(){}
+    });
+</script>
+
+</body>
+</html>

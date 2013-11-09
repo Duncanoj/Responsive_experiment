@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Photo_site_2</title>
+
+  
+  <link rel="stylesheet" href="css/foundation.css">
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Schoolbell' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Nothing+You+Could+Do' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+
+  <script src="js/vendor/custom.modernizr.js"></script>
+
+    <style>
+        h2 {
+            color: #464646;
+            font-size: 25px;
+            font-family: 'Open Sans', sans-serif;
+        }
+        h3 {
+            color: #464646;
+            font-size: 20px;
+            font-family: 'Open Sans', sans-serif;
+        }
+        #background_image {
+            position: fixed;
+            left: 0px;
+            height:100%;
+            width: 100%;
+            z-index: -10;
+        }
+        #background_image_filter {
+            position: fixed;
+            left: 0px;
+            height:100%;
+            width: 100%;
+            background: rgba(221, 221, 221, 0.94);
+            z-index: -9;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="background_image_filter"></div>
+    <div id="background_image">
+        <img  style="" src=img/Bubble_BG.png>
+    </div>
+
+    <!--top bar section-->
+    <nav class="top-bar">
+    <ul class="title-area">
+        <!-- Title Area -->
+        <li class="name">
+            <h1><a href="///Users/orrelljones/WebstormProjects/Responsive_experiment/index.html">Explorations of an amateur photographer </a></h1>
+        </li>
+        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+    </ul>
+
+    <section class="top-bar-section">
+        <!-- Left Nav Section -->
+        <ul class="right">
+            <li class="active"><a href="///Users/orrelljones/WebstormProjects/Responsive_experiment/Photo_site_page3.html">Landscapes</a></li>
+            <!--<li class="divider"></li>-->
+            <li class="active"><a href="#">People</a></li>
+            <!--<li class="divider"></li>-->
+            <li class="active"><a href="#">City</a></li>
+            <!--<li class="divider"></li>-->
+            <li class="active"><a href="#">Other</a></li>
+            <!--<li class="has-dropdown"><a href="#">Main Item 5</a>-->
+
+                <!--<ul class="dropdown">-->
+                    <!--<li class="has-dropdown"><a href="#">Dropdown Level 1a</a>-->
+
+                        <!--<ul class="dropdown">-->
+                            <!--<li><label>Dropdown Level 2 Label</label></li>-->
+                            <!--<li><a href="#">Dropdown Level 2a</a></li>-->
+                            <!--<li><a href="#">Dropdown Level 2b</a></li>-->
+                            <!--<li class="has-dropdown"><a href="#">Dropdown Level 2c</a>-->
+
+                                <!--<ul class="dropdown">-->
+                                    <!--<li><label>Dropdown Level 3 Label</label></li>-->
+                                    <!--<li><a href="#">Dropdown Level 3a</a></li>-->
+                                    <!--<li><a href="#">Dropdown Level 3b</a></li>-->
+                                    <!--<li class="divider"></li>-->
+                                    <!--<li><a href="#">Dropdown Level 3c</a></li>-->
+                                <!--</ul>-->
+                            <!--</li>-->
+                            <!--<li><a href="#">Dropdown Level 2d</a></li>-->
+                            <!--<li><a href="#">Dropdown Level 2e</a></li>-->
+                            <!--<li><a href="#">Dropdown Level 2f</a></li>-->
+                        <!--</ul>-->
+                    <!--</li>-->
+                    <!--<li><a href="#">Dropdown Level 1b</a></li>-->
+                    <!--<li><a href="#">Dropdown Level 1c</a></li>-->
+                    <!--<li class="divider"></li>-->
+                    <!--<li><a href="#">Dropdown Level 1d</a></li>-->
+                    <!--<li><a href="#">Dropdown Level 1e</a></li>-->
+                    <!--<li><a href="#">Dropdown Level 1f</a></li>-->
+                    <!--<li class="divider"></li>-->
+                    <!--<li><a href="#">See all &rarr;</a></li>-->
+                <!--</ul>-->
+            <!--</li>-->
+            <!--<li class="divider"></li>-->
+        </ul>
+    </section>
+    </nav>
+
+<!--normal site tile-->
+    <!--<div class="row">-->
+		<!--<div class="large-12 columns">-->
+			<!--<h2>Explorations of an amateur photographer</h2>-->
+			<!--&lt;!&ndash;<p>blah blah blah</p>&ndash;&gt;-->
+			<!--<hr/>-->
+		<!--</div>-->
+	<!--</div>-->
+
+<!--photo carosel section-->
+    <div class="row">
+        <div class="large-12 columns">
+            <ul data-orbit>
+                <li>
+                    <img src="img/Tokyo_skyline_2x3_large(canvas).jpg" alt="Photo by: Duncan Orrell-Jones" />
+                    <div class="orbit-caption">
+                        <p>MotoAzabu Hills and Roppongi Hills from top of Tokyo Midtown</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/Big_Sur_Waves_%231_12x18.jpg" alt="Photo by: Duncan Orrell-Jones" />
+                    <div class="orbit-caption">
+                        <p>Big Sur waves</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/EMP_relfection.jpg" alt="Photo by: Duncan Orrell-Jones" />
+                    <div class="orbit-caption">
+                        <p>Reflection of Space Needle in Experience Music Project</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/Flowering_of_the_vines.jpg" alt="Photo by: Duncan Orrell-Jones">
+                    <div class="orbit-caption">
+                        <p>O'Shaugnessy winery, Napa Valley</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/HB_pier_at_dusk.jpg" alt="Photo by: Duncan Orrell-Jones">
+                    <div class="orbit-caption">
+                        <p>Flowering of the Vines, Napa Valley Reserve</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/mb_bathroom.jpg" alt="Photo by: Duncan Orrell-Jones">
+                    <div class="orbit-caption">
+                        <p>Manhattan Beach before dawn</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/Meadowood_trail.jpg" alt="Photo by: Duncan Orrell-Jones">
+                    <div class="orbit-caption">
+                        <p>Morning walk above Meadow Wood, Napa Valley</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/Pier_ave_mural.jpg" alt="Photo by: Duncan Orrell-Jones">
+                    <div class="orbit-caption">
+                        <p>Hermosa Pier at dusk</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/Under_HB_pier.jpg" alt="Photo by: Duncan Orrell-Jones">
+                    <div class="orbit-caption">
+                        <p>Pier Avenue, Hermosa Beach</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/Oshaugnessy_cellar.jpg" alt="Photo by: Duncan Orrell-Jones">
+                    <div class="orbit-caption">
+                        <p>Seattle Space Needle reflected in Experience Music Center</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+	<div class="row">
+        <!--<div class="large-12 columns">-->
+            <!--<h3>Links to Albums</h3>-->
+
+            <!--<div class="row">-->
+                <!--<div class="large-3 columns">-->
+                    <!--<div class="panel">-->
+                        <!--<p>People</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="large-3 columns">-->
+                    <!--<div class="panel">-->
+                        <!--<p>Landscapes</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="large-3 columns">-->
+                    <!--<div class="panel">-->
+                        <!--<p>City</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="large-3 columns">-->
+                    <!--<div class="panel">-->
+                        <!--<p>Other</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <div class="large-6 columns">
+            <h3>What to Expect</h3>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="large-6 columns">
+            <h3>Links for more info</h3>
+            <p>Here are links to the equipment I use:</p>
+            <ul class="disc">
+                <li><a href="http://foundation.zurb.com/docs">Leica M9</a><br />The joy of simple view-finder photography.</li>
+                <li><a href="http://github.com/zurb/foundation">Nikon D700</a><br />Lorem ipsum dolor sit amet.</li>
+                <li><a href="http://twitter.com/foundationzurb">Accessories</a><br />Lorem ipsum dolor sit amet.</li>
+            </ul>
+        </div>
+
+
+		</div>
+
+
+  <script>
+  document.write('<script src=' +
+  ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
+  '.js><\/script>')
+  </script>
+  
+  <!--<script src="js/foundation.min.js"></script>-->
+
+  <script src="js/foundation/foundation.js"></script>
+
+  <script src="js/foundation/foundation.alerts.js"></script>
+
+  <script src="js/foundation/foundation.clearing.js"></script>
+
+  <script src="js/foundation/foundation.cookie.js"></script>
+
+  <script src="js/foundation/foundation.dropdown.js"></script>
+
+  <script src="js/foundation/foundation.forms.js"></script>
+
+  <script src="js/foundation/foundation.joyride.js"></script>
+
+  <script src="js/foundation/foundation.magellan.js"></script>
+
+  <script src="js/foundation/foundation.orbit.js"></script>
+
+  <script src="js/foundation/foundation.reveal.js"></script>
+
+  <script src="js/foundation/foundation.section.js"></script>
+
+  <script src="js/foundation/foundation.tooltips.js"></script>
+
+  <script src="js/foundation/foundation.topbar.js"></script>
+
+  <script src="js/foundation/foundation.interchange.js"></script>
+
+  <script src="js/foundation/foundation.placeholder.js"></script>
+
+  <script src="js/foundation/foundation.abide.js"></script>
+
+
+  <script>
+    $(document).foundation('orbit', {
+        animation: 'fade',
+        timer_speed: 3000,
+        pause_on_hover: true,
+        resume_on_mouseout: true,
+        animation_speed: 500,
+        stack_on_small: true,
+        navigation_arrows: true,
+        slide_number: true,
+        container_class: 'orbit-container',
+        stack_on_small_class: 'orbit-stack-on-small',
+        next_class: 'orbit-next',
+        prev_class: 'orbit-prev',
+        timer_container_class: 'orbit-timer',
+        timer_paused_class: 'paused',
+        timer_progress_class: 'orbit-progress',
+        slides_container_class: 'orbit-slides-container',
+        bullets_container_class: 'orbit-bullets',
+        bullets_active_class: 'active',
+        slide_number_class: 'orbit-slide-number',
+        caption_class: 'orbit-caption',
+        active_slide_class: 'active',
+        orbit_transition_class: 'orbit-transitioning',
+        bullets: true,
+        timer: true,
+        next_on_click: true,
+        variable_height: false,
+        before_slide_change: function(){},
+        after_slide_change: function(){}
+    });
+  </script>
+</body>
+</html>

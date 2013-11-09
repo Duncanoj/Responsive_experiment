@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>XYZ</title>
+
+
+    <link rel="stylesheet" href="css/foundation.css">
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Schoolbell' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Nothing+You+Could+Do' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+
+    <script src="js/vendor/custom.modernizr.js"></script>
+
+    <style>
+    h2 {
+    color: #464646;
+    font-size: 25px;
+    font-family: 'POpen Sans', sans-serif;
+    }
+    h3 {
+    color: #464646;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    }
+    #background_image {
+    position: fixed;
+    left: 0px;
+    height:100%;
+    width: 100%;
+    z-index: -10;
+    }
+    #background_image_filter {
+    position: fixed;
+    left: 0px;
+    height:100%;
+    width: 100%;
+    background: rgba(221, 221, 221, 0.94);
+    z-index: -9;
+    }
+    </style>
+
+</head>
+<body>
+    <div id="background_image_filter"></div>
+        <div id="background_image">
+    <img  style="" src=img/Bubble_BG.png>
+        </div>
+
+        <div class="row">
+    <div class="large-12 columns">
+    <h2>Explorations of an amateur photographer</h2>
+                <!--<p>This is version 4.3.2.</p>-->
+    <hr/>
+    </div>
+        </div>
+    <div id="myClearingEx">
+    <ul class="clearing-thumbs clearing-feature" data-clearing>
+        <li><a class="th"><img src="img/DSC_6213.jpg"></a></li>
+        <li><a class="th"><img src="img/DSC_6335.jpg"></a></li>
+        <li><a class="th"><img src="img/L1000336.jpg"></a></li>
+        <li><a class="th"><img src="img/L1000428.jpg"></a></li>
+        <li><a class="th"><img src="img/L1000451.jpg"></a></li>
+    </ul>
+    </div>
+    <script>
+        document.write('<script src=/js/vendor/'
+                + ('__proto__' in {} ? 'zepto' : 'jquery')
+                + '.js><\/script>');
+    </script>
+
+    <script src="js/foundation/foundation.js"></script>
+
+    <script src="js/foundation/foundation.alerts.js"></script>
+
+    <script src="js/foundation/foundation.clearing.js"></script>
+
+    <script src="js/foundation/foundation.cookie.js"></script>
+
+    <script src="js/foundation/foundation.dropdown.js"></script>
+
+    <script src="js/foundation/foundation.forms.js"></script>
+
+    <script src="js/foundation/foundation.joyride.js"></script>
+
+    <script src="js/foundation/foundation.magellan.js"></script>
+
+    <script src="js/foundation/foundation.orbit.js"></script>
+
+    <script src="js/foundation/foundation.reveal.js"></script>
+
+    <script src="js/foundation/foundation.section.js"></script>
+
+    <script src="js/foundation/foundation.tooltips.js"></script>
+
+    <script src="js/foundation/foundation.topbar.js"></script>
+
+    <script src="js/foundation/foundation.interchange.js"></script>
+
+    <script src="js/foundation/foundation.placeholder.js"></script>
+
+    <script src="js/foundation/foundation.abide.js"></script>
+
+    <script>
+        $(document).foundation('clearing.js', 'start');
+    </script>
+
+    <script>
+        $("div#myClearingEx").on("open.clearing.fndtn", function(event, id) {
+            console.info("About to open thumbnail with id " + id);
+        });
+    </script>
+
+
+</body>
+</html>

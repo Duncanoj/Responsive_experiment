@@ -1,0 +1,274 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Photo Site Page 2</title>
+
+    <link rel="stylesheet" href="css/foundation.css">
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Schoolbell' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Nothing+You+Could+Do' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    <script src="js/vendor/custom.modernizr.js"></script>
+
+    <style type="text/css">
+
+        <!-- Enable media queries for old IE -->
+        <!--[if lt IE 9]>
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <![endif]-->
+
+        h2 {
+            color: #464646;
+            font-size: 25px;
+            font-family: 'POpen Sans', sans-serif;
+        }
+        h3 {
+            color: #464646;
+            font-size: 20px;
+            font-family: 'Open Sans', sans-serif;
+        }
+        #background_image {
+            position: fixed;
+            left: 0px;
+            height:100%;
+            width: 100%;
+            z-index: -10;
+        }
+        #background_image_filter {
+            position: fixed;
+            left: 0px;
+            height:100%;
+            width: 100%;
+            background: rgba(221, 221, 221, 0.94);
+            z-index: -9;
+        }
+
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: #EEE;
+            font: 10px/13px 'Lucida Sans',sans-serif;
+        }
+        .wrap {
+            overflow: hidden;
+            margin: 30px 30px 30px 30px;
+        }
+        .box {
+            float: left;
+            position: relative;
+            width: 20%;
+            padding-bottom: 15.2%;
+            margin: 0 0 -15px 0px;
+        }
+        .boxInner {
+            position: absolute;
+            left: 10px;
+            right: 10px;
+            top: 10px;
+            bottom: 27px;
+            overflow: hidden;
+        }
+        .boxInner img {
+            width: 100%;
+            /*height: 100%;*/
+            /*margin: 0px 0px 0px -20%;*/
+            /*left: 50%;*/
+            /*right: 50%;*/
+        }
+        .boxInner .titleBox {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin-bottom: -50px;
+            background: #000;
+            background: rgba(0, 0, 0, 0.5);
+            color: #FFF;
+            padding: 0px;
+            text-align: center;
+            -webkit-transition: all 0.3s ease-out;
+            -moz-transition: all 0.3s ease-out;
+            -o-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+            font: 10px/11px 'Lucida Sans',sans-serif;
+        }
+        body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleBox {
+            margin-bottom: 0;
+        }
+        @media only screen and (max-width : 480px) {
+            /* Smartphone view: 1 tile */
+            .box {
+                width: 100%;
+                padding-bottom: 72%;
+            }
+        }
+        @media only screen and (max-width : 650px) and (min-width : 481px) {
+            /* Tablet view: 2 tiles */
+            .box {
+                width: 50%;
+                padding-bottom: 37.5%;
+            }
+        }
+        @media only screen and (max-width : 1050px) and (min-width : 651px) {
+            /* Small desktop / ipad view: 3 tiles */
+            .box {
+                width: 33.3%;
+                padding-bottom: 24.8%;
+            }
+        }
+        @media only screen and (max-width : 1290px) and (min-width : 1051px) {
+            /* Medium desktop: 4 tiles */
+            .box {
+                width: 25%;
+                padding-bottom: 19%;
+            }
+            /*.boxInner Img {*/
+                /*margin: 0px 0px 0px -20%;*/
+                /*left: 50%;*/
+            /*}*/
+        }
+    </style>
+</head>
+<body class="no-touch">
+
+<div id="background_image_filter"></div>
+<div id="background_image">
+    <img  style="" src=img/Bubble_BG.png>
+</div>
+
+<!--top bar section-->
+<nav class="top-bar">
+    <ul class="title-area">
+        <!-- Title Area -->
+        <li class="name">
+            <h1><a href="///Users/orrelljones/WebstormProjects/Responsive_experiment/index.html">Explorations of an amateur photographer </a></h1>
+        </li>
+        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+    </ul>
+
+    <section class="top-bar-section">
+        <!-- Left Nav Section -->
+        <ul class="right">
+            <li class="active"><a href="#">Landscapes</a></li>
+            <!--<li class="divider"></li>-->
+            <li class="active"><a href="#">People</a></li>
+            <!--<li class="divider"></li>-->
+            <li class="active"><a href="#">City</a></li>
+            <!--<li class="divider"></li>-->
+            <li class="active"><a href="#">Other</a></li>
+            <!--<li class="has-dropdown"><a href="#">Main Item 5</a>-->
+
+            <!--<ul class="dropdown">-->
+            <!--<li class="has-dropdown"><a href="#">Dropdown Level 1a</a>-->
+
+            <!--<ul class="dropdown">-->
+            <!--<li><label>Dropdown Level 2 Label</label></li>-->
+            <!--<li><a href="#">Dropdown Level 2a</a></li>-->
+            <!--<li><a href="#">Dropdown Level 2b</a></li>-->
+            <!--<li class="has-dropdown"><a href="#">Dropdown Level 2c</a>-->
+
+            <!--<ul class="dropdown">-->
+            <!--<li><label>Dropdown Level 3 Label</label></li>-->
+            <!--<li><a href="#">Dropdown Level 3a</a></li>-->
+            <!--<li><a href="#">Dropdown Level 3b</a></li>-->
+            <!--<li class="divider"></li>-->
+            <!--<li><a href="#">Dropdown Level 3c</a></li>-->
+            <!--</ul>-->
+            <!--</li>-->
+            <!--<li><a href="#">Dropdown Level 2d</a></li>-->
+            <!--<li><a href="#">Dropdown Level 2e</a></li>-->
+            <!--<li><a href="#">Dropdown Level 2f</a></li>-->
+            <!--</ul>-->
+            <!--</li>-->
+            <!--<li><a href="#">Dropdown Level 1b</a></li>-->
+            <!--<li><a href="#">Dropdown Level 1c</a></li>-->
+            <!--<li class="divider"></li>-->
+            <!--<li><a href="#">Dropdown Level 1d</a></li>-->
+            <!--<li><a href="#">Dropdown Level 1e</a></li>-->
+            <!--<li><a href="#">Dropdown Level 1f</a></li>-->
+            <!--<li class="divider"></li>-->
+            <!--<li><a href="#">See all &rarr;</a></li>-->
+            <!--</ul>-->
+            <!--</li>-->
+            <!--<li class="divider"></li>-->
+        </ul>
+    </section>
+</nav>
+
+
+<div class="wrap">
+
+    <!-- Define all of the tiles: -->
+    <div class="box">
+        <div class="boxInner">
+            <img src="img/Big_Sur_Waves_%231_12x18.jpg"/>
+            <div class="titleBox">
+                <p>Big Sur Waves</p>
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="boxInner">
+            <img src="img/mb_bathroom.jpg"/>
+            <div class="titleBox">
+                <p>Manhattan Beach bathrooms</p>
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="boxInner">
+            <img src="img/HB_pier_at_dusk.jpg"/>
+            <div class="titleBox">
+                <p>HB pier at dusk</p>
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="boxInner">
+            <img src="img/Oshaugnessy_cellar.jpg"/>
+            <div class="titleBox">
+                <p>O'Shaugnessy Cellar</p>
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="boxInner">
+            <img src="img/Tokyo_skyline_2x3_large(canvas).jpg"/>
+            <div class="titleBox">
+                <p>Tokyo Skyline</p>
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="boxInner">
+            <img src="img/Under_HB_pier.jpg"/>
+            <div class="titleBox">
+                <p>Under Hermosa Beach Pier</p>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.js"></script>
+
+    <script type="text/javascript">
+        $(function(){
+            // See if this is a touch device
+            if ('ontouchstart' in window)
+            {
+                // Set the correct [touchscreen] body class
+                $('body').removeClass('no-touch').addClass('touch');
+
+                // Add the touch toggle to show text when tapped
+                $('div.boxInner img').click(function(){
+                    $(this).closest('.boxInner').toggleClass('touchFocus');
+                });
+            }
+        });
+    </script>
+</body>
+</html>

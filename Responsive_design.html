@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Schoolbell' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Nothing+You+Could+Do' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+
+    <!--<meta charset="utf-8">-->
+    <!-- SlidesJS Required (if responsive): Sets the page width to the device width. -->
+    <meta name="viewport" content="width=device-width">
+    <!-- End SlidesJS Required -->
+    <style>
+
+       /*@font-face {*/
+       /*font-family: "bitstream vera serif Bold";*/
+       /*src: url("http://developer.mozilla.org/@api/deki/files/2934/=VeraSeBd.ttf")*/
+       /*[unicode-range: <urange>#;]?*/
+       /*font-feature-settings: normal;*/
+       /*font-weight: normal;*/
+       /*font-style: normal;*/
+       /*}*/
+       body{
+           background: rgba(221, 221, 221, 0.49);
+       }
+        #header{
+            position: fixed;
+            margin-left: 200px;
+            color: white;
+            font-size: 12px;
+            font-family: 'Open Sans', sans-serif;
+            font-style: italic;
+            width: 100%;
+            z-index: 5;
+        }
+        footer{
+            position:fixed;
+            bottom: 0px;
+            height: 20px;
+            width: 100%;
+            margin-left: 200px;
+            padding-left: 10px;
+            padding-top: 5px;
+            background-color: red;
+            font-family: 'Open Sans', sans-serif;
+            font-style: italic;
+            color: white;
+            font-size: 12px;
+            vertical-align: bottom;
+        }
+        h1 {
+           position: absolute;
+           top:0px;
+           left: 0px;
+           height: 15px;
+           text-align: left;
+           padding-left: 20px;
+           color: darkslategray;
+           font-size: 15px;
+           font-family: 'Open Sans', sans-serif;
+           font-style: italic;
+       }
+       h2{
+           background-color: white;
+           height: 40px;
+           top:10px;
+           padding-left: 200px;
+           padding-top: 10px;
+           font-size:20px;
+           font-family: calibri, sans-serif;
+
+       }
+       #left_section {
+           background-color: rgb(181, 181, 181);
+           position: fixed;
+           width:200px;
+           height: 100%;
+           padding-top: 10px;
+           /*font-family: 'Schoolbell', cursive, sans-serif;*/
+           Color: white;
+           font-size: 20px;
+           z-index: 4;
+       }
+       #nav_bar{
+           position: fixed;
+           height: 60px;
+           margin-top : 35px;
+           margin-left: 160px;
+           padding-top: 5px;
+           padding-bottom: 0px;
+           vertical-align: bottom;
+           background-color: white;
+           font-family: 'Poiret One', cursive, sans-serif;
+           font-size: 20px;
+           width: 100%;
+           z-index: 3;
+       }
+       #nav_bar ul{
+           list-style-type: none;
+       }
+       #nav_bar li{
+           width: 150px;
+           float: left;
+           text-align: center;
+       }
+       #nav_bar a{
+           color: red;
+           text-decoration: none;
+           display: block;
+           padding: 5px;
+       }
+        #log_in{
+            position: absolute;
+            right: 50px;
+            top: 10px;
+            color: darkgrey;
+        }
+
+       body {
+           margin: 0;
+       }
+       #album_list{
+           position: fixed;
+           width:200px;
+           height: 100%;
+           padding-top: 160px;
+           font-family: 'Open Sans', sans-serif;
+           font-style: italic;
+           font-size: 20px;
+           line-height: 40px;
+           z-index: 4;
+       }
+       #album_list ul{
+           list-style-type: none;
+       }
+       #album_list li{
+           display: table-row;
+       }
+       /*#album_list li:before{*/
+           /*display: table-row;*/
+                 /*}*/
+       #album_list a{
+           display: table;
+           text-decoration: none;
+           padding: 5px;
+           color: darkslategray;
+       }
+       #background_image {
+           position: fixed;
+           left: 200px;
+           height:100%;
+           width: 100%;
+           z-index: -1;
+       }
+        #background_image_filter {
+            position: fixed;
+            left: 200px;
+            height:100%;
+            width: 100%;
+            background: rgba(221, 221, 221, 0.9);
+            z-index: 0;
+        }
+        /*#photo_viewer {*/
+            /*position: absolute;*/
+            /*top: 150px;*/
+            /*left: 250px;*/
+            /*width: 750px;*/
+            /*height: 500px;*/
+            /*padding: 10px;*/
+            /*font-family: sans-serif;*/
+            /*font-size: 25px;*/
+            /*font-weight: normal;*/
+            /*text-align: center;*/
+            /*color: white;*/
+            /*border-radius: 5px;*/
+            /*border: 2px solid rgb(193, 193, 193);*/
+            /*background-color: rgba(255, 255, 255, 0.56);*/
+            /*text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);*/
+        /*}*/
+        #slides {
+            display: none
+        }
+    a.slidesjs-next,
+    a.slidesjs-previous,
+    a.slidesjs-play,
+    a.slidesjs-stop {
+        background: url(http://slidesjs.com/examples/playing/img/btns-next-prev.png) no-repeat;
+        display:block;
+        width:12px;
+        height:18px;
+        margin-top: 7px;
+        overflow: hidden;
+        text-indent: -9999px;
+        float: left;
+        margin-right:5px;
+    }
+
+    a.slidesjs-next {
+        margin-right:10px;
+        background-position: -12px 0;
+    }
+
+    a:hover.slidesjs-next {
+        background-position: -12px -18px;
+    }
+
+    a.slidesjs-previous {
+        background-position: 0 0;
+    }
+
+    a:hover.slidesjs-previous {
+        background-position: 0px -18px;
+    }
+
+    a.slidesjs-play {
+        width:15px;
+        background-position: -25px 0;
+    }
+
+    a:hover.slidesjs-play {
+        background-position: -25px -18px;
+    }
+
+    a.slidesjs-stop {
+        width:18px;
+        background-position: -41px 0;
+    }
+
+    a:hover.slidesjs-stop {
+        background-position: -41px -18px;
+    }
+
+    .slidesjs-pagination {
+        margin: 7px 0 0;
+        float: right;
+        list-style: none;
+    }
+
+    .slidesjs-pagination li {
+        position: relative;
+        float: left;
+        right: 5%;
+        width: 13px;
+        margin: 3px 0px 0;
+        z-index: 999;
+    }
+
+    .slidesjs-pagination li a {
+        display: block;
+        width: 13px;
+        height: 0px;
+        padding-top: 13px;
+        background-image: url(http://slidesjs.com/img/pagination.png);
+        background-position: 0 0;
+        float: left;
+        overflow: hidden;
+    }
+    .slidesjp-pagination li.current a{
+       background-position: 0 -12px;;
+    }
+
+    .slidesjs-pagination li a.active,
+    .slidesjs-pagination li a:hover.active {
+        background-position: 0 -13px;
+    }
+
+    .slidesjs-pagination li a:hover {
+        background-position: 0 -26px
+    }
+
+    #slides a:link,
+    #slides a:visited {
+        color: #333
+    }
+
+    #slides a:hover,
+    #slides a:active {
+        color: #9e2020
+    }
+            /* Center the slideshow */
+    .container {
+        margin: 0 auto;
+        position: fixed;
+        Top: 100px;
+        left: 200px;
+        width: 100%;
+        /*height: 100%;*/
+        z-index: 1;
+    }
+
+            /* Media quires for a responsive layout */
+
+            /* For tablets & smart phones */
+        /*@media (max-width: 767px) {*/
+            /*body {*/
+                /*padding-left: 10px;*/
+                /*padding-right: 10px;*/
+            /*}*/
+            /*.container {*/
+                /*width: auto*/
+            /*}*/
+        /*}*/
+
+            /* For smartphones */
+        /*@media (max-width: 480px) {*/
+            /*.container {*/
+                /*width: auto*/
+            /*}*/
+        /*}*/
+
+            /* For smaller displays like laptops */
+        @media (min-width: 768px) and (max-width: 1200px) {
+            .container {
+                width: 700px
+            }
+        }
+
+            /* For larger displays */
+        @media (min-width: 1200px) {
+            .container {
+                width: 1000px
+            }
+        }
+
+        #footer{
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+<h1 id="header">an amateur discovering the possibilities of photography</h1>
+<section id="left_section">
+
+</section>
+
+        <div id="album_list">
+            <ul>
+                <li><a href="#">Album #1</a></li>
+                <li><a href="#">Album #2</a></li>
+                <li><a href="#">Album #3</a></li>
+                <li><a href="#">Album #4</a></li>
+                <li><a href="#">Album #5</a></li>
+                <li><a href="#">Album #6</a></li>
+            </ul>
+       </div>
+
+       <div id="nav_bar">
+           <ul>
+               <li><a href="#">Landscapes</a></li>
+               <li><a href="#">Portraits</a></li>
+               <li><a href="#">City</a></li>
+               <li><a href="#">Other</a></li>
+           </ul>
+       </div>
+        <div id="background_image_filter">
+
+        </div>
+        <div id="background_image">
+            <img  style="" src=img/Bubble_BG.png>
+        </div>
+<!-- SlidesJS Required: Start Slides -->
+<!-- The container is used to define the width of the slideshow -->
+<div id="log_in">
+    <li><a href="#">Log In</a></li>
+</div>
+
+<div class="container">
+    <div id="slides">
+        <img src="img/Tokyo_skyline_2x3_large(canvas).jpg" alt="Photo by: Duncan Orrell-Jones">
+        <img src="Big_Sur_Waves_%231_12x18.jpg" alt="Photo by: Duncan Orrell-Jones">
+        <img src="img/DSC_6213.jpg" alt="Photo by: Duncan Orrell-Jones">
+        <img src="img/DSC_6335.jpg" alt="Photo by: Duncan Orrell-Jones">
+        <img src="img/DSC_6375.jpg" alt="Photo by: Duncan Orrell-Jones">
+        <img src="img/L1000336.jpg" alt="Photo by: Duncan Orrell-Jones">
+        <img src="img/L1000408.jpg" alt="Photo by: Duncan Orrell-Jones">
+        <img src="img/L1000413.jpg" alt="Photo by: Duncan Orrell-Jones">
+        <img src="img/L1000428.jpg" alt="Photo by: Duncan Orrell-Jones">
+        <img src="img/L1000451.jpg" alt="Photo by: Duncan Orrell-Jones">
+        <!--<a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>-->
+        <!--<a class="slidesjs-previous slidesjs-navigation" href="#" title="Previous">Previous</a>-->
+        <!--<a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>-->
+        <!--<a class="slidesjs-next slidesjs-navigation" href="#" title="Next">Next</a>-->
+        <!--<a class="slidesjs-play slidesjs-navigation slidesjs-playing" href="#" title="Play" style="display: none;">Play</a>-->
+        <!--<a class="slidesjs-stop slidesjs-navigation" href="#" title="Stop" style="display: block;">Stop</a>-->
+        <!--<ul class="slidesjs-pagination">-->
+            <!--<li class="slidesjs-pagination-item">-->
+                <!--<a href="#" data-slidesjs-item="0" class="active">1</a>-->
+            <!--</li>-->
+            <!--<li class="slidesjs-pagination-item">-->
+                <!--<a href="#" data-slidesjs-item="1" class="active">2</a>-->
+            <!--</li>-->
+            <!--<li class="slidesjs-pagination-item">-->
+                <!--<a href="#" data-slidesjs-item="2">3</a>-->
+            <!--</li>-->
+            <!--<li class="slidesjs-pagination-item">-->
+                <!--<a href="#" data-slidesjs-item="3">4</a>-->
+            <!--</li>-->
+            <!--<li class="slidesjs-pagination-item">-->
+                <!--<a href="#" data-slidesjs-item="4">5</a>-->
+            <!--</li>-->
+        <!--</ul>-->
+    </div>
+</div>
+<!-- End SlidesJS Required: Start Slides -->
+
+<!-- SlidesJS Required: Link to jQuery -->
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<!-- End SlidesJS Required -->
+
+<!--<script src="js/plugins.js"></script>-->
+
+<!-- SlidesJS Required: Link to jquery.slides.js -->
+<script src="jquery.slides.min.js"></script>
+<!-- End SlidesJS Required -->
+
+<!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
+<script>
+    $(function() {
+        $('#slides').slidesjs({
+            width: 600,
+            height: 350,
+          play: {
+            active: true,
+//            [boolean] Generate the play and stop buttons.
+//            You cannot use your own buttons. Sorry.
+            auto: true,
+              // [boolean] Start playing the slideshow on load.
+            interval: 4000,
+            // [number] Time spent on each slide in milliseconds.
+            swap: true,
+            // [boolean] show/hide stop and play buttons
+            pauseOnHover: true,
+            // [boolean] pause a playing slideshow on hover
+            restartDelay: 0,
+            // [number] restart delay on inactive slideshow
+            effect: {
+                  slide: {
+                      // Slide effect settings.
+                      speed: 600
+                      // [number] Speed in milliseconds of the slide animation.
+          }
+          }
+          }
+        });
+    });
+</script>
+<!-- End SlidesJS Required -->
+        <footer id="footer">
+        web design by Duncan Orrell-Jones
+       </footer>
+
+
+</body>
+</html>
